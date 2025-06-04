@@ -2,7 +2,6 @@
 
 import qs from "query-string";
 import {
-    useParams,
     usePathname,
     useRouter,
     useSearchParams,

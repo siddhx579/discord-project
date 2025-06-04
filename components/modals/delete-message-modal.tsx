@@ -10,8 +10,6 @@ import { Button } from "../ui/button";
 
 export const DeleteMessageModal = () => {
     const { isOpen, onClose, type, data } = useModal();
-    const router = useRouter();
-
     const isModalOpen = isOpen && type === "deleteMessage";
     const { apiUrl, query } = data;
 

@@ -1,7 +1,7 @@
 "use client";
 
 import axios from "axios";
-import qs from "query-string";
+import qs, { StringifiableRecord } from "query-string";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -10,13 +10,12 @@ import { Plus } from "lucide-react";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useModal } from "@/hooks/use-modal-store";
-// import { EmojiPicker } from "./emoji-picker";
 import { useRouter } from "next/navigation";
 import { EmojiPicker } from "./emoji-picker";
 
 interface ChatInputProps {
     apiUrl: string;
-    query: Record<string, any>;
+    query: StringifiableRecord;
     name: string;
     type: "conversation" | "channel";
 }
