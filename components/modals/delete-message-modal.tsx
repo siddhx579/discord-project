@@ -3,7 +3,6 @@
 import { useModal } from "@/hooks/use-modal-store";
 import axios from "axios";
 import qs from "query-string";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle } from "../ui/dialog";
 import { Button } from "../ui/button";
