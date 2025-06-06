@@ -130,7 +130,6 @@ Open [http://localhost:3000](http://localhost:3000) to see the application.
 
 ## 📁 Project Structure
 
-    ```
     discord-clone/
     ├── app/                    # Next.js 14 App Router
     │   ├── (auth)/            # Authentication routes
