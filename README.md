@@ -89,25 +89,29 @@ A full-featured Discord clone built with Next.js 14, featuring real-time messagi
     Fill in your environment variables:
 
 # Database
-DATABASE_URL="your_database_url"
+    ```bash
+    DATABASE_URL="your_database_url"
 
 # Clerk Authentication
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-CLERK_SECRET_KEY=your_clerk_secret_key
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
+    ```bash
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+    CLERK_SECRET_KEY=your_clerk_secret_key
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
 # UploadThing
-UPLOADTHING_SECRET=your_uploadthing_secret
-UPLOADTHING_APP_ID=your_uploadthing_app_id
+    ```bash
+    UPLOADTHING_SECRET=your_uploadthing_secret
+    UPLOADTHING_APP_ID=your_uploadthing_app_id
 
 # LiveKit
-LIVEKIT_API_KEY=your_livekit_api_key
-LIVEKIT_API_SECRET=your_livekit_api_secret
-NEXT_PUBLIC_LIVEKIT_URL=your_livekit_url
-\`\`\`
+    ```bash
+    LIVEKIT_API_KEY=your_livekit_api_key
+    LIVEKIT_API_SECRET=your_livekit_api_secret
+    NEXT_PUBLIC_LIVEKIT_URL=your_livekit_url
+
 
 4. **Set up the database**
     ```bash
@@ -126,27 +130,27 @@ Open [http://localhost:3000](http://localhost:3000) to see the application.
 
 ## 📁 Project Structure
 
-\`\`\`
-discord-clone/
-├── app/                    # Next.js 14 App Router
-│   ├── (auth)/            # Authentication routes
-│   ├── (invite)/          # Invite handling
-│   ├── (main)/            # Main application
-│   ├── (setup)/           # Initial setup
-│   ├── api/               # API routes
-│   ├── globals.css        # Global styles
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Landing page
-├── components/            # Reusable components
-│   ├── ui/               # UI components (Radix + custom)
-│   ├── providers/        # Context providers
-│   └── ...               # Feature components
-├── hooks/                # Custom React hooks
-├── lib/                  # Utility functions
-├── prisma/               # Database schema and migrations
-├── public/               # Static assets
-└── pages/                # API routes (if any)
-\`\`\`
+    ```
+    discord-clone/
+    ├── app/                    # Next.js 14 App Router
+    │   ├── (auth)/            # Authentication routes
+    │   ├── (invite)/          # Invite handling
+    │   ├── (main)/            # Main application
+    │   ├── (setup)/           # Initial setup
+    │   ├── api/               # API routes
+    │   ├── globals.css        # Global styles
+    │   ├── layout.tsx         # Root layout
+    │   └── page.tsx           # Landing page
+    ├── components/            # Reusable components
+    │   ├── ui/               # UI components (Radix + custom)
+    │   ├── providers/        # Context providers
+    │   └── ...               # Feature components
+    ├── hooks/                # Custom React hooks
+    ├── lib/                  # Utility functions
+    ├── prisma/               # Database schema and migrations
+    ├── public/               # Static assets
+    └── pages/                # API routes (if any)
+
 
 ## 🔧 Configuration
 
