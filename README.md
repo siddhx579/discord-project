@@ -70,28 +70,24 @@ A full-featured Discord clone built with Next.js 14, featuring real-time messagi
 ### Installation
 
 1. **Clone the repository**
-\`\`\`bash
-git clone https://github.com/yourusername/discord-clone.git
-cd discord-clone
-\`\`\`
+    ```bash
+    git clone https://github.com/yourusername/discord-clone.git
+    cd discord-clone
 
 2. **Install dependencies**
-\`\`\`bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-\`\`\`
+    ```bash
+    npm install
+    # or
+    yarn install
+    # or
+    pnpm install
 
 3. **Set up environment variables**
-\`\`\`bash
-cp .env.example .env.local
-\`\`\`
+    ````bash
+    cp .env.example .env.local
 
-Fill in your environment variables:
+    Fill in your environment variables:
 
-\`\`\`env
 # Database
 DATABASE_URL="your_database_url"
 
@@ -114,19 +110,17 @@ NEXT_PUBLIC_LIVEKIT_URL=your_livekit_url
 \`\`\`
 
 4. **Set up the database**
-\`\`\`bash
-npx prisma generate
-npx prisma db push
-\`\`\`
+    ```bash
+    npx prisma generate
+    npx prisma db push
 
 5. **Run the development server**
-\`\`\`bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-\`\`\`
+    ```bash
+    npm run dev
+    # or
+    yarn dev
+    # or
+    pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) to see the application.
 
